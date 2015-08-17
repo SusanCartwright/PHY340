@@ -20,7 +20,7 @@ The key measure of the spread of a distribution about its mean is the **variance
 
 If we have two variables, the degree to which they are correlated is given by the **covariance**, defined as _V_<sub>xy</sub> = (&sum;(x<sub>i</sub> - &lang;x&rang;)(y<sub>i</sub> - &lang;y&rang;))/(_N_ - 1).  For uncorrelated variables, the signs and magnitudes of (x<sub>i</sub> - &lang;x&rang;) and (y<sub>i</sub> - &lang;y&rang;) are unrelated, so the product is as likely to be positive as negative and will average out to zero.  For correlated variables, the signs and magnitudes _are_ related, so the average, and hence _V_<sub>xy</sub>, will not be zero (it will be positive for correlated variables and negative for anticorrelated).
 
-The **correlation coefficient** of x and y, &rho;<sub>xy</sub>, is given by &rho;<sub>xy</sub> = _V_<sub>xy</sub>/(&sigma;<sub>x</sub>&sigma;<sub>y</sub>, and lies in the range -1 to +1, where -1 represents perfect anticorrelation and +1 perfect correlation.  Note that the covariance and correlation coefficient describe _linear_ correlations between x and y: if the correlation is not linear, it will not be well described by &rho;<sub>xy</sub>: see example in the notebook, and figure in the [Wikipedia article](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
+The **correlation coefficient** of x and y, &rho;<sub>xy</sub>, is given by &rho;<sub>xy</sub> = _V_<sub>xy</sub>/(&sigma;<sub>x</sub>&sigma;<sub>y</sub>), and lies in the range -1 to +1, where -1 represents perfect anticorrelation and +1 perfect correlation.  Note that the covariance and correlation coefficient describe _linear_ correlations between x and y: if the correlation is not linear, it will not be well described by &rho;<sub>xy</sub> &ndash; see example in the notebook, and figure in the [Wikipedia article](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
 
 
 ##The Gaussian distribution (see [this notebook](gaussian.ipynb))
@@ -55,16 +55,16 @@ Both the Poisson and the binomial distribution can be approximated by Gaussians 
 
 The required physics result is often not the experimentally measured quantity, but is derived from the measured quantity by mathematical manipulation, by combining with another measured quantity, or by fitting a function to the relationship between measured quantities (e.g. _y_ = _mx_ + _c_, where the physics result is _m_ and/or _c_).
 
-Fitting functions we'll tackle later.  For functions of one variable, _f_(_x_), where the measured value of _x_ has uncertainty _\sigma_<sub>_x_</sub>, it is entirely legitimate to derive the uncertainty from the upper and lower limits _f_(_x_\plusmn;_\sigma_<sub>_x_</sub>).  Indeed, this is the best way to do it if the error is asymmetric (i.e. the lower error bar &sigma;<sub>&minus;</sub> is different from the upper error bar &sigma;<sub>+</sub>), if the error is not small, or if the function looks difficult to differentiate.  However, it is convenient from a theoretical perspective to use the approximation
+Fitting functions we'll tackle later.  For functions of one variable, _f_(_x_), where the measured value of _x_ has uncertainty _&sigma;_<sub>_x_</sub>, it is entirely legitimate to derive the uncertainty from the upper and lower limits _f_(_x_\plusmn;_&sigma;_<sub>_x_</sub>).  Indeed, this is the best way to do it if the error is asymmetric (i.e. the lower error bar &sigma;<sub>&minus;</sub> is different from the upper error bar &sigma;<sub>+</sub>), if the error is not small, or if the function looks difficult to differentiate.  However, it is convenient from a theoretical perspective to use the approximation
 
-<p align="center"> \sigma;<sub>_f_</sub>/\sigma;<sub>_x_</sub> &asympt; |d_f_/d_x_|, </p>
+<p align="center"> &sigma;<sub>f</sub>/&sigma;<sub>x</sub> &asymp; |d<i>f</i>/d<i>x</i>|, </p>
 
 where the modulus signs are there because &sigma; is conventionally defined as positive.  
 
 For functions of more than one variable, the key result is 
 
-<p align="center"> _V_<sub>_x_+_y_</sub> = _V_<sub>_x_</sub> + _V_<sub>_y_</sub> + 2_V_<sub>_xy_</sub>, </p>
+<p align="center"> <i>V</i><sub>x+y</sub> = <i>V</i><sub>x</sub> + <i>V</i><sub>y</sub> + 2<i>V</i><sub>xy</sub>, </p>
 
-where _V_<sub>_x_</sub> = &sigma;<sub>_x_</sub><sup>2</sup>, and similarly for _y_ and _f_, and _V_<sub>_xy</sub> is the covariance of _x_ and _y_.  This is easy to prove (see [the pdf](ErrorPropagation.pdf) and by using \sigma;<sub>_f_</sub> = \sigma;<sub>_x_</sub> |d_f_/d_x_| can be extended to more general functions.
+where _V_<sub>_x_</sub> = &sigma;<sub>_x_</sub><sup>2</sup>, and similarly for _y_ and _f_, and _V_<sub>_xy_</sub> is the covariance of _x_ and _y_.  This is easy to prove (see [the pdf](ErrorPropagation.pdf)) and by using &sigma;<sub>_f_</sub> = &sigma;<sub>_x_</sub> |d<i>f</i>/d<i>x</i>| can be extended to more general functions.
 
 For details, see [the accompanying pdf file](ErrorPropagation.pdf); for some examples, see [the notebook](errors.pdf).
