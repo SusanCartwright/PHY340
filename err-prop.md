@@ -55,7 +55,7 @@ Both the Poisson and the binomial distribution can be approximated by Gaussians 
 
 The required physics result is often not the experimentally measured quantity, but is derived from the measured quantity by mathematical manipulation, by combining with another measured quantity, or by fitting a function to the relationship between measured quantities (e.g. _y_ = _mx_ + _c_, where the physics result is _m_ and/or _c_).
 
-Fitting functions we'll tackle later.  For functions of one variable, _f_(_x_), where the measured value of _x_ has uncertainty _&sigma;_<sub>_x_</sub>, it is entirely legitimate to derive the uncertainty from the upper and lower limits _f_(_x_\plusmn;_&sigma;_<sub>_x_</sub>).  Indeed, this is the best way to do it if the error is asymmetric (i.e. the lower error bar &sigma;<sub>&minus;</sub> is different from the upper error bar &sigma;<sub>+</sub>), if the error is not small, or if the function looks difficult to differentiate.  However, it is convenient from a theoretical perspective to use the approximation
+Fitting functions we'll tackle later.  For functions of one variable, _f_(_x_), where the measured value of _x_ has uncertainty _&sigma;_<sub>_x_</sub>, it is entirely legitimate to derive the uncertainty from the upper and lower limits _f_(_x_&plusmn;_&sigma;_<sub>_x_</sub>).  Indeed, this is the best way to do it if the error is asymmetric (i.e. the lower error bar &sigma;<sub>&minus;</sub> is different from the upper error bar &sigma;<sub>+</sub>), if the error is not small, or if the function looks difficult to differentiate.  However, it is convenient from a theoretical perspective to use the approximation
 
 <p align="center"> &sigma;<sub>f</sub>/&sigma;<sub>x</sub> &asymp; |d<i>f</i>/d<i>x</i>|, </p>
 

@@ -10,6 +10,6 @@ The course contains three main topics:
 
 * [**errors and their propagation**](err-prop.md), covering basic terminology, correlated and uncorrelated errors, and error propagation;
 
-* **fitting functions**, covering linear and non-linear fits and the definition of &chi;<sup>2</sup>;
+* [**fitting functions**](fits.md), covering linear and non-linear fits and the definition of &chi;<sup>2</sup>;
 
-* **hypothesis testing and confidence intervals**, covering the use of &chi;<sup>2</sup> as a measure of goodness of fit, error bars in terms of &Delta;&chi;<sup>2</sup>, cinfidence intervals and limits.
+* [**hypothesis testing and confidence intervals**](hyp-test.md), covering the use of &chi;<sup>2</sup> as a measure of goodness of fit, error bars in terms of &Delta;&chi;<sup>2</sup>, confidence intervals and limits.
