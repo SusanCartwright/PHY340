@@ -51,7 +51,7 @@ Other probability density functions commonly met with in physics and astrophysic
 
 Both the Poisson and the binomial distribution can be approximated by Gaussians if the number of events is large.  For the Poisson, the variance of the distribution &sigma;<sup>2</sup> is equal to the mean; for the binomial, the mean is _np_ (where _n_ is the number of trials and _p_ is the probability of success) and the variance is &sigma;<sup>2</sup> = _np_(1 - _p_).  Note that, although the Poisson and binomial distributions are only defined for non-negative integers, both can have non-integral means and variances.
 
-#Propagating errors (see [this pdf](ErrorPropagation.pdf) and [this notebook](errors.pdf))
+#Propagating errors (see [this pdf](ErrorPropagation.pdf) and [this notebook](errors.ipynb))
 
 The required physics result is often not the experimentally measured quantity, but is derived from the measured quantity by mathematical manipulation, by combining with another measured quantity, or by fitting a function to the relationship between measured quantities (e.g. _y_ = _mx_ + _c_, where the physics result is _m_ and/or _c_).
 
@@ -67,4 +67,4 @@ For functions of more than one variable, the key result is
 
 where _V_<sub>_x_</sub> = &sigma;<sub>_x_</sub><sup>2</sup>, and similarly for _y_ and _f_, and _V_<sub>_xy_</sub> is the covariance of _x_ and _y_.  This is easy to prove (see [the pdf](ErrorPropagation.pdf)) and by using &sigma;<sub>_f_</sub> = &sigma;<sub>_x_</sub> |d<i>f</i>/d<i>x</i>| can be extended to more general functions.
 
-For details, see [the accompanying pdf file](ErrorPropagation.pdf); for some examples, see [the notebook](errors.pdf).
+For details, see [the accompanying pdf file](ErrorPropagation.pdf); for some examples, see [the notebook](errors.ipynb).
